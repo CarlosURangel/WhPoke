@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Welcome to Poke-Play-Park!</title> <!-- Título actualizado para reflejar el contenido de la página -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap">
+    <link rel="stylesheet" href="/PokePlayParkCode/estilo.css">
+    <link rel="shortcut icon" type="image/png" href="images/logoizquierda.png">
+</head>
+<body>
+    <header>
+        <img src="images/logoizquierda.png" alt="PokePlay Logo" class="header-logo">
+        <h1 class="centrar-texto">Welcome to Poke-Play-Park!</h1>
+        <button class="header-language"></button>
+    </header>
+    <main>
+        <!-- <button id="menu-button" class="menu-button">
+            <img src="images/menu.png">
+        </button> -->
+        <button id="info-button" class="info-button">
+            <img src="images/info.png">
+        </button>
+        <!-- <section class="modal-info">
+            <div class="modal-info-container">
+                <h2 class="modal-info-title">How to play the game?</h2>
+                <p class="modal-info-paragraph">Engage in gaming sessions with your buddies on a single device or invite them to an online showdown. In case your friends aren't around, don't worry, you can test your skills against numerous pokemon enthusiasts globally by seeking an adversary. Alternatively, you can play against the clock if you want to prove yourself  by making better times each try.
+                </p>
+                <ol class="modal-info-list">
+                    <li>The first player who get three in a row vertically, horizontally or diagonally, is the winner.</li>
+                    <li>If your mate doesn't get any answer, you can steal their turn</li>
+                    <li>Theres no order to put your pokemon, you can choose any option in the grid</li>
+                </ol>
+                    <a href="#" class="modal-info-close">Close</a>
+            </div>
+        </section>
+        <section class="modal-menu">
+            <div class="modal-menu-container">
+                <ul class="moda-menu-ul">
+                    <li class="Tic-tac-toe-list"><a class="tic-tac-toe-a" href="#">Tic-Tac-Toe</a></li>
+                    <li class="pokemon-list"><a class="pokemon-a" href="#">Pokemon?</a></li>
+                    <li class="pokedex-list"><a class="pokedex-a" href="#">Pokedex Challenge</a></li>
+                </ul>
+                <a href="#" class="modal-menu-close">X</a>
+            </div>
+            </section>-->
+        <section class="guessThePokemon">
+        <div class="guessContentContainer">
+            <h2 class="Guess-title">Guess the pokemon!</h2>
+            <div class="guessContainer">
+                <div id="all">
+                  <div class="All-Pokemon" id="pokemon-list">
+                      <div class="Pokemon" id="listaPokemonEncontrado">
+                          <p class="pokemon1name">Lucario</p>
+                         
+                          <div class="mostrarSilueta">
+                            <div id="contenedor1" class="invisible">
+                                <div class="pokemonimage">
+                                     <img class="pokemon-imagen" >
+                               </div> 
+                               
+                            </div>
+                            <div id="contenedor2" class="visible">
+                                <div class="whos">
+                                  <img class="questionMArk" src="images/questionMArk.png" alt="who?">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pokemon-info">
+                              <div class="pokemon-name">
+                                  <h3 class="pokemon-name"></h3>
+                                  <p class="pokemon-ability"></p>
+                              </div>
+                          <div class="pokemon-types">
+                              
+                          </div>
+                          <div class="pokemon-stats">
+                              <p class="height">1.2m</p>
+                              <p class="weight">54kg</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="show-silh">
+                    <a href="#" id="cambiarImagen">Show silhouette</a>
+                  </div>
+                  <div class="search-poke">
+                    <input class="searchpoke" type="text" onkeypress="handleKeyPress(event)" placeholder="Pokemon Name">
+                    <div id="search-poke-result"></div>
+                  </div>
+              </div>
+              <div class="guessgridcontainer" id="listaPokemonBuscados">
+            </div> 
+        </div>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Limite de intentos alcanzado, fin del juego</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Por favor, reinicie la página para volver a intentarlo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="restartButton">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+        <div id="modalGanador" class="modal">
+            <div class="modal-content">
+                <p>Ganaste el juego!</p>
+            </div>
+        
+    </main>
+    <!-- <section class = "modal-tic-tac-toe">
+        <div class="content-container">
+            <h2 class="centrado">Pokemon-Tic-Tac-Toe</h2>
+            <div class="grid-container">
+                <button class="game-cell" style="background-image: url(/jcj.png);"></button>
+                <button class="game-cell" style="background-image: url(/online.png);"></button>
+                <button class="game-cell" style="background-image: url(/pantalla\ divididiad.png);"></button>
+                <button class="game-cell" style="background-image: url(/contra\ reloj.png);"></button>
+            </div>
+    </section> -->
+    <script src="js/funcionalidades.js"></script>
+    <script src="js/iteraciones.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+margin: auto;
+    width: 90%;
+    background-color: #E74545;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten según el ancho */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    gap: 10px; /* Espaciado entre botones */
+    padding: 20px; /* Espaciado interno del contenedor */
+    max-width: 900px; /* Ajusta este valor según el tamaño de tus botones y el espacio deseado entre ellos */
+    margin: auto;
+
+    display: grid;
+    width: 50%;
+    max-width: 600px;
+    max-height: 60%;
+    background-color: #E8E8E8;
+    padding: 1em 0em;
+    place-items: center;
+    gap: 1em;
+    border-radius: 0.5rem;
+    position: absolute;
+    margin: 100px auto;

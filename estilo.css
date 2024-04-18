@@ -1,0 +1,872 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+html, body {
+    margin: 0;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+header {
+    /* Estilos del encabezado */
+    display: flex;
+    position: relative;
+    background-color: #FA6555;
+    background-image: url('images/Rectangulo\ rojo\ abajo\ titulo.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 10px;
+    display: flex; /* Usa flexbox para alinear los elementos internos */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; 
+    padding: 20px; /* Ajuste de espacio alrededor del contenido */
+}
+
+body{
+    position: relative;
+}
+
+main{
+    position: relative;
+}
+
+.normal{
+    color: #000000;
+    background-color: #a8a878;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.fire{
+    color: #000000;
+    background-color: #f08030;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.water{
+    color: #fff;
+    background-color: #6890f0;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.grass{
+    color: #000000;
+    background-color: #78c850;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.electric{
+    color: #000000;
+    background-color: #f8d030;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.ice{
+    color: #000000;
+    background-color: #98d8d8;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.fighting{
+    color: #fff;
+    background-color: #c03028;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.poison{
+    color: #fff;
+    background-color: #a040a0;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.ground {
+    color: #000000;
+    background-color: #e0c068;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.flying{
+    color: #000000;
+    background-color: #a890f0;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.psychic{
+    color: #000000;
+    background-color: #f85888;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.bug{
+    color: #000000;
+    background-color: #a8b820;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.rock{
+    color: #000000;
+    background-color: #b8a038;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.ghost{
+    color: #fff;
+    background-color: #705898;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.dark{
+    color: #fff;
+    background-color: #705848;
+    text-align: center;
+    border-radius: 100vmax;
+    padding: .1rem .2rem;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+}
+
+.dragon{
+    color: #fff;
+    background-color: #7038f8;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.steel{
+    color: #000000;
+    background-color: #b8b8d0;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.fairy{
+    color: #000000;
+    background-color: #f0b6bc;
+    text-align: center;
+    border-radius: 100vmax;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 25);
+    padding: .1rem .2rem;
+}
+
+.height{
+    color: #fff;
+    background-color: #000000;
+    border-radius: 100vmax;
+    text-align: center;
+    padding: .1rem .2rem;
+    opacity: 0;
+}
+
+.weight{
+    color: #fff;
+    background-color: #000000;
+    border-radius: 100vmax;
+    text-align: center;
+    padding: .1rem .2rem;
+    opacity: 0;
+}
+
+.matching-type {
+    color: #ff0000;
+    background-color: #00ff00; 
+}
+
+.matching-ability {
+    color: #00ff00;
+}
+
+.header-logo {
+    height: 80px; /* Altura del logo */
+    width: 80px; /* Ancho del logo */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+.header-language {
+    position: absolute; /* Posicionamiento absoluto para poder colocarlo exactamente donde quieras */
+    right: 40px; /* Alinea con el botón de información, ajusta según sea necesario */
+    top: 50%; /* Empuja el botón hacia abajo al 50% de la altura del header */
+    transform: translateY(-50%); 
+    width: 37px; /* Ancho de la bandera */
+    height: 24px; /* Altura de la bandera */
+    background-image: url('images/estados-unidos-de-america.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    background-position: center;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border: none;
+}
+.elemento-derecho {
+    margin-left: auto; /* Esto empujará el elemento hacia la derecha */
+}
+.main {
+    display: flex;
+    justify-content: space-between; /* Esto alineará los elementos a los extremos */
+    align-items: flex-end; /* Esto los centrará verticalmente */
+    position: relative;
+    flex-direction: column;
+}
+h2.centrado {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+h1.centrar-texto {
+    flex-grow: 1; /* Esto permitirá que el título ocupe todo el espacio disponible */
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin-right: 55px;
+}
+
+
+.centrado {
+    /* Clase para centrar textos */
+    text-align: center;
+    margin: 0; /* Remueve márgenes por defecto */
+}
+
+.grid-container {
+    /* Contenedor flex para la cuadrícula de selección de juego */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten según el ancho */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    gap: 10px; /* Espaciado entre botones */
+    padding: 20px; /* Espaciado interno del contenedor */
+    max-width: 900px; /* Ajusta este valor según el tamaño de tus botones y el espacio deseado entre ellos */
+    margin: auto; /* Centra el contenedor en la página */
+}
+
+.game-cell {
+    /* Estilos para las celdas de selección de juego */
+    width: 420px; /* Ancho de la celda, ajusta según sea necesario */
+    height: 220px; /* Altura de la celda, ajusta según sea necesario */
+    border: none; /* Remueve el borde por defecto del botón */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+    background-size: cover; /* Asegura que el fondo cubra toda la celda */
+    background-repeat: no-repeat; /* Centra la imagen de fondo */
+}
+.menu-button, .info-button {
+    top: 10px;
+    width: 80px; /* Ajusta al tamaño deseado */
+    height: 80px; /* Ajusta al tamaño deseado */
+    padding: 0; /* Elimina el padding para que la imagen pueda ocupar todo el espacio del botón */
+    overflow: hidden; /* Evita que el contenido se desborde */ /* Distancia desde la parte superior del contenedor */
+    position: absolute;
+}
+.menu-button img, .info-button img {
+    width: 100%; /* Esto hará que la imagen llene el ancho del botón */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+    z-index: 2;
+}
+
+.menu-button {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos del contenedor */
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    left: 20px; /* Distancia desde la izquierda del contenedor */
+}
+.info-button {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos a los extremos del contenedor */
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    right: 20px; /* Distancia desde la derecha del contenedor */
+}
+
+
+.modal-info{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffffbd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    z-index: 3;
+}
+
+.modal-info-show{
+ opacity: 1;
+ pointer-events: unset;
+ transition: opacity .6s;
+}
+
+.modal-info-container{
+    margin: auto;
+    width: 90%;
+    background-color: #E74545;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.modal-info-title{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.modal-info-paragraph{
+    color: #fff;
+
+}
+.modal-info-list{
+    color: #fff;
+}
+
+.modal-info-close{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FA6555;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal-info-close:hover{
+    color: #FA6555;
+    background-color: #fff;
+}
+
+/* .modal-menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .1s;
+    z-index: 3;
+}
+
+.modal-menu-show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .3s;
+   }
+
+.modal-menu-container{
+    width: 90%;
+    max-width: 230px;
+    background-color: #fff;
+    position: absolute; 
+    top: 0vh;
+    padding: 1em 0em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    border: 4px solid;
+} */
+
+ul{
+    list-style: none;
+    padding: 1rem;
+}
+
+li{
+   margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* .Tic-tac-toe-list::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('/gato.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.Tic-tac-toe-list a{
+    text-decoration: none;
+    color: #000000;
+    transition: background-color .3s;
+}
+
+.Tic-tac-toe-list a:hover{
+    color: #FA6555;
+} */
+
+
+.pokemon-list::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('/pokemon\ list.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.pokemon-list a{
+    text-decoration: none;
+    color: #000000;
+    transition: background-color .3s;
+}
+
+.pokemon-list a:hover{
+    color: #FA6555;
+}
+
+
+.pokedex-list::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('/pokedexlist.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.pokedex-list a{
+    text-decoration: none;
+    color: #000000;
+    transition: background-color .3s;
+}
+
+.pokedex-list a:hover{
+    color: #FA6555;
+}
+
+/* .modal-menu-close{
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    margin-top: 1px;
+    margin-right: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    transition: background-color .3s;
+}
+
+.modal-menu-close:hover{
+    color: #FA6555;
+}
+
+.modal-tic-tac-toe{
+    pointer-events: none;
+    transition: opacity .2s;
+    opacity: 0;
+}
+
+.modal-tic-tac-toe-show{
+ opacity: 1;
+ pointer-events: unset;
+} */
+
+.guessThePokemon{
+    position: absolute;
+    top: 0vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    pointer-events:all;
+}
+
+.guessThePokemon-show{
+ opacity: 1;
+ pointer-events: unset;
+ transition: opacity .2s;
+}
+
+.guessContentContainer{
+    position: relative;
+    top: 0vh;
+    width: 390px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.guessContainer{
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: #E8E8E8;
+    border-radius: 0.5rem;
+    width: 390px;  
+    height: 243px;
+    position: relative;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.pokemon-ability{
+    position: absolute;
+    top: 10.5rem;
+    left: 50%; 
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.pokemon-name{
+    position: absolute;
+    top: 2%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    opacity: 0;
+}
+
+.pokemon-image img{
+    width: 100%;
+    max-width: 8rem;
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;
+    filter: brightness(0);
+    
+}
+
+
+
+/* Botón mostrar silueta */
+.invisible-img {
+    opacity: 1;
+
+  }
+  .invisible-img {
+    opacity: 0;
+  } 
+
+  .invisible-contenedor {
+    opacity: 1;
+
+  }
+  .invisible-contenedor {
+    opacity: 0;
+  } 
+
+
+
+.questionMArk{
+    width: 100%;
+    max-width: 5rem;
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;
+    filter: brightness(0);
+    top: 30%;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.pokemon-types{
+    position: absolute;
+    left: 17%;
+    top: 25%;
+    opacity: 0;
+}
+
+.pokemon-stats{
+    position: absolute;
+    top: 25%;
+    right: 17%;
+
+}
+
+.Guess-title{
+    text-align: center;
+}
+
+.pokemon1name{
+    opacity: 0;
+}
+
+.show-silh a{
+    position: absolute;
+    left: 0vw;
+    top: 16em;
+    color: #000000;
+    background-color: #77D1EE;
+    border-radius: 100vmax;
+    padding: .25rem .5rem;
+    transition: background-color .3s;
+}
+
+.searchpoke{
+    all: unset;
+    position: absolute;
+    right: 0.3vw;
+    top: 16em;
+    border-radius: 100vmax;
+    padding: .25rem .5rem;
+    background-color: #E8E8E8;
+    font-family: Pixelify+Sans;
+    color: #000000;
+}
+
+
+.guessgridcontainer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    padding-top: 20px; 
+    gap: 10px;
+    max-width: 390px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+.searchedPokemonContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    height: 100px;
+    background-color: #E8E8E8;
+    border-radius: 0.5rem;
+    width: calc(50% - 10px);
+    min-width: 150px;
+    box-sizing: border-box;
+}
+
+.pokemon-name-chosen{
+    font-size: 0.9rem;
+    grid-area: 1 / 2 / 2 / 3; 
+    align-self: start;
+    justify-self: center;
+    top: 50%; transform: translateY(-50%);
+}
+
+.pokemon-stats-chosen{
+    font-size: 0.7rem;
+    grid-area: 2 / 3 / 3 / 4; /* Segunda fila, tercera columna */
+    align-self: center;
+    margin-right: 4px;
+    z-index: 1000;
+}
+
+.pokemon-types-chosen{
+    font-size: 0.7rem;
+    grid-area: 2 / 1 / 3 / 2; 
+    align-self: center;
+    margin-left: 4px;
+}
+
+.pokemon-ability-chosen{
+    font-size: 0.8rem;
+    grid-area: 3 / 2 / 4 / 3; /* Tercera fila, segunda columna */
+    align-self: start;
+    justify-self: center;
+}
+
+.pokemon-image-chosen {
+    grid-column: 2;
+    grid-row: 2 / 3;
+    display: flex; /* Usar flexbox para alinear la imagen */
+    align-items: center; /* Centrar verticalmente dentro de la celda del grid */
+    justify-content: center; /* Centrar horizontalmente dentro de la celda del grid */
+    height: 100%; /* Asegurarse de que el contenedor tome toda la altura asignada a esa celda del grid */
+}
+
+.pokemon-image-chosen img{
+  max-width: 170%;
+  max-height: 170%;
+}
+
+.show{
+    opacity: 1;
+}
+
+.correct-part{
+    background-color: #88EE77;
+    color: #000000;
+}
+
+.incorrect-part{
+    background-color: #FA6555;
+    color: #fff;
+}
+.modal {
+    display: none; /* Ocultar el modal inicialmente */
+    position: fixed; /* Posición fija para que aparezca encima del contenido */
+    z-index: 1; /* Asegura que esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite desplazar el contenido si el modal es demasiado grande */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrar verticalmente y dejar espacio en la parte superior */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Ancho máximo del modal */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative; /* Para usar position absolute en el botón de cerrar */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#restartButton {
+    background-color: #FA6555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-2px);
+    }
+    
+    20%, 80% {
+        transform: translateX(2px);
+    }
+
+    30%, 50%, 70% {
+        transform: translateX(-2px);
+    }
+
+    40%, 60% {
+        transform: translateX(2px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+#pokemonImg{
+    opacity: 0;
+}
+/* Estilos para el modal */
+#ganasteModal {
+    display: none; /* Por defecto, el modal estará oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+#ganasteModalContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Arial, sans-serif; /* Tipo de letra */
+}
+
+/* Estilo para el botón de reinicio */
+#modalRestartButton {
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Estilos para centrar el botón */
+#modalRestartButtonContainer {
+    text-align: center;
+}
